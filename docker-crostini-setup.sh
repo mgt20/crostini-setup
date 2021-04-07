@@ -30,9 +30,12 @@ get_docker() {
 
 	curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr \"[:upper:]\" \"[:lower:]\")/gpg | sudo apt-key add -
 	sudo sh -c 'echo "deb [arch=amd64] https://download.docker.com/linux/$(lsb_release -is | tr \"[:upper:]\" \"[:lower:]\") $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list'
-
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 	sudo apt-get update
 	sudo apt-get install docker-ce -y
+    sudo apt-get install docker-ce-cli -y
+    sudo apt-get install containerd.io -y
     sudo groupadd docker
 	me=`whoami`
 	sudo usermod -aG docker ${me}
@@ -40,6 +43,7 @@ get_docker() {
     sudo curl -fsSL "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
     sudo curl -fsSL "https://raw.githubusercontent.com/docker/compose/${COMPOSE_VERSION}/contrib/completion/bash/docker-compose" -o /etc/bash_completion.d/docker-compose
+    newgro docker
 
 }
 
