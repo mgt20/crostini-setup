@@ -1,8 +1,6 @@
 #docker-crostini-setup
 
-CAUTION: untested and potentially in rough shape
-
-Sets up docker in a Crostini installation on CrOS
+Sets up Docker, docker-compose, and required permissions inside of the default Crostini (Debian) container on CrOS
 
 ## How-To
 1. Run 'mkdir github && cd github'
