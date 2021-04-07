@@ -16,4 +16,8 @@ cd docker-crostini-setup
 chmod +x 'docker-crostini-setup.sh
 ./docker-crostini-setup.sh
 ```
+2. Test Docker by running:
 
+```
+docker run hello-world
+```
