@@ -33,6 +33,7 @@ get_docker() {
 
 	sudo apt-get update
 	sudo apt-get install docker-ce -y
+    sudo groupadd docker
 	me=`whoami`
 	sudo usermod -aG docker ${me}
     COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
