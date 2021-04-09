@@ -10,7 +10,7 @@ Sets up Docker, docker-compose, and required permissions inside of the default C
 1. Run:
 
 ```
-mkdir ~/github && cd github
+mkdir ~/github && cd ~/github
 git clone https://github.com/mgt20/docker-crostini-setup.git
 cd docker-crostini-setup
 chmod +x docker-crostini-setup.sh
