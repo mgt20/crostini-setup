@@ -48,8 +48,9 @@ get_docker() {
 
 }
 
-check_for_os
 sudo apt-get update
 sudo apt-get upgrade -y
+sudo apt-get install lsb-release -y
+check_for_os
 cd ~
 get_docker
