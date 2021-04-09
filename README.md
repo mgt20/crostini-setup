@@ -1,4 +1,4 @@
-#docker-crostini-setup
+# docker-crostini-setup
 
 Sets up Docker, docker-compose, and required permissions inside of the default Crostini (Debian) container on CrOS
 
