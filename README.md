@@ -1,6 +1,6 @@
-# docker-crostini-setup
+# crostini-setup
 
-Sets up Docker, docker-compose, and required permissions inside of the default Crostini (Debian) container on CrOS
+Sets up Docker, docker-compose, required permissions, and other config/software inside of the default Crostini (Debian) container on CrOS
 
 ## Pre-requisites
 - Crostini must be installed and running on the CrOS device
@@ -10,7 +10,7 @@ Sets up Docker, docker-compose, and required permissions inside of the default C
 1. Download the script and run it:
 
 ```
-curl -o- https://raw.githubusercontent.com/mgt20/docker-crostini-setup/main/script.sh | bash
+curl -o- https://raw.githubusercontent.com/mgt20/crostini-setup/main/script.sh | bash
 ```
 
 2. Test Docker by running:
