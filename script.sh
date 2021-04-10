@@ -21,7 +21,7 @@ check_for_os() {
 }
 
 get_docker() {
-	sudo apt-get install \
+	sudo apt install \
      		apt-transport-https \
      		ca-certificates \
      		curl \
@@ -33,7 +33,7 @@ get_docker() {
   	sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/$(lsb_release -is | tr \"[:upper:]\" \"[:lower:]\") \
   		$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null'
 	sudo apt-get update
-	sudo apt-get install \
+	sudo apt install \
 		docker-ce \
 		docker-ce-cli \
 		containerd.io -y
@@ -50,7 +50,7 @@ get_docker() {
 
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install lsb-release -y
+sudo apt install lsb-release -y
 check_for_os
 cd ~
 get_docker
