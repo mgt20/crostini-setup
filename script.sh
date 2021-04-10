@@ -44,7 +44,6 @@ get_docker() {
     	sudo curl -fsSL "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     	sudo chmod +x /usr/local/bin/docker-compose
     	sudo curl -fsSL "https://raw.githubusercontent.com/docker/compose/${COMPOSE_VERSION}/contrib/completion/bash/docker-compose" -o /etc/bash_completion.d/docker-compose
-    	newgrp docker
 
 }
 
@@ -62,4 +61,4 @@ sudo apt install lsb-release -y
 check_for_os
 cd ~
 get_docker
-get_vscodes
+get_vscode
