@@ -52,6 +52,18 @@ get_vscode() {
 	mkdir -p ~/Downloads
 	curl -o ~/Downloads/vscode.deb -L http://go.microsoft.com/fwlink/?LinkID=760868
 	sudo apt install ~/Downloads/vscode.deb
+	code --install-extension ms-python.python
+	code --install-extension magicstack.MagicPython
+	code --install-extension CoenraadS.bracket-pair-colorizer-2
+	code --install-extension oderwat.indent-rainbow
+	code --install-extension dongli.python-preview
+	code --install-extension shardulm94.trailing-spaces
+	code --install-extension VisualStudioExptTeam.vscodeintellicode
+	code --install-extension eamodio.gitlens
+	code --install-extension streetsidesoftware.code-spell-checker
+	code --install-extension ms-azuretools.vscode-docker
+	code --install-extension PKief.material-icon-theme
+	code --install-extension Equinusocio.vsc-material-theme
 	
 }
 
