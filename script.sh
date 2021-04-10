@@ -48,9 +48,19 @@ get_docker() {
 
 }
 
+get_vscode() {
+	sudo apt update
+	mkdir -p ~/Downloads
+	curl -o ~/Downloads/vscode.deb -L http://go.microsoft.com/fwlink/?LinkID=760868
+	sudo apt install ~/Downloads/vscode.deb
+	
+}
+
+
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt install lsb-release -y
 check_for_os
 cd ~
 get_docker
+get_vscode
