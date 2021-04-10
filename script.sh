@@ -1,3 +1,13 @@
+#!/bin/bash
+
+#clear terminal
+clear
+
+#print to screen
+echo "---------------------------------------------------"
+echo "Hi $USER! Commencing dev environment configuration:"
+echo "---------------------------------------------------"
+
 check_for_os() {
 	unset OS
 	unset OSV
