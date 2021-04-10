@@ -13,7 +13,13 @@ Sets up Docker, docker-compose, required permissions, and other config/software 
 curl -o- https://raw.githubusercontent.com/mgt20/crostini-setup/main/script.sh | bash
 ```
 
-2. Test Docker by running:
+2. Reboot, log in/out, or run this command to make the group changes take affect:
+
+```
+newgrp docker
+```
+
+3. Test Docker by running:
 
 ```
 docker run hello-world
