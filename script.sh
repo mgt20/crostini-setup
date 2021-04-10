@@ -62,4 +62,4 @@ sudo apt install lsb-release -y
 check_for_os
 cd ~
 get_docker
-get_vscode
+get_vscodes
