@@ -77,6 +77,12 @@ get_vscode() {
 	
 }
 
+get_vscode() {
+	sudo apt install \
+		traceroute -y
+		
+}
+
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt install lsb-release -y
@@ -84,3 +90,4 @@ check_for_os
 cd ~
 get_docker
 get_vscode
+get_nettools
