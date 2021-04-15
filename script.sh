@@ -77,7 +77,7 @@ get_vscode() {
 	
 }
 
-get_vscode() {
+get_nettools() {
 	sudo apt install \
 		traceroute -y
 		
