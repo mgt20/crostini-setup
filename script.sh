@@ -83,6 +83,18 @@ get_nettools() {
 		
 }
 
+get_vmtools() {
+    sudo apt install \
+        qemu-kvm \
+        libvirt-clients \
+        libvirt-daemon-system \
+        bridge-utils \
+        virtinst \
+        libvirt-daemon \
+        virt-manager -y
+
+}
+            
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt install lsb-release -y
@@ -91,3 +103,4 @@ cd ~
 get_docker
 get_vscode
 get_nettools
+get_vmtools
