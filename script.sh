@@ -61,7 +61,7 @@ get_vscode() {
 	sudo apt update
 	mkdir -p ~/Downloads
 	curl -o ~/Downloads/vscode.deb -L http://go.microsoft.com/fwlink/?LinkID=760868
-	sudo apt install ~/Downloads/vscode.deb
+	sudo apt install ~/Downloads/vscode.deb -y
 	code --install-extension ms-python.python
 	code --install-extension magicstack.MagicPython
 	code --install-extension CoenraadS.bracket-pair-colorizer-2
